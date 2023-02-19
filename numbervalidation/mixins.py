@@ -14,8 +14,8 @@ class meshandler:
     
 
     def send_otp_on_mob(self):
-      account_sid = "ACc803cf8a9733ede49b429a03786f1543"
-      auth_token = "6bef81660426a83dee99c44d343b36b5"
+      account_sid = ""
+      auth_token = ""
       client = Client(account_sid, auth_token)
 
       message = client.messages.create(
