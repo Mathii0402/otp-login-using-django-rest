@@ -14,8 +14,8 @@ class meshandler:
     
 
     def send_otp_on_mob(self):
-      account_sid = ""
-      auth_token = ""
+      account_sid = os.environ['twilio_sid']
+      auth_token = os.environ['twilio_auth_token']
       client = Client(account_sid, auth_token)
 
       message = client.messages.create(
